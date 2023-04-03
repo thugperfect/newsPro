@@ -1,38 +1,269 @@
-.App {
-  text-align: center;
+.App{
+  width: 100%;
+  height: auto;
+}
+.mbody{
+  width: 100%;
+  height: 1200vh;
+  background-color:#e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+.body{
+  width: 90% ;
+  height: 98%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.mnav{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 70px;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+}
+.navbtn{
+  display: flex;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  border-right: 1px solid #e0e0e0;
+  font-weight: 900;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home{
+  border-top-left-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbtn:hover{
+  background-color: black;
+  color: #fff;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mlogo{
+  width: 100%;
+  border-bottom:1px solid #e0e0e0 ;
+  height: 150px;
+  display: flex;
+  
+  
+}
+.newspro{
+  font-size: 50px;
+  font-weight: 900;
+  
+}
+.newstext{
+  color: #a3a3a3;
+  font-size: 20px;
+}
+.logo{
+  margin-left: 10px;
+  width: 600px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.mjoin{
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.join{
+  width: 80%;
+  height: 80%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color:#141b2d;
+}
+
+#mnav{
+  border: none;
+  width: 1000px;
+}
+.mmnav{
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y:hidden;
+  
+}
+.mmnav::-webkit-scrollbar{
+  display: none;
+}
+.mcont{
+  
+  width: 100%;
+  height: 500vh;
+  display: flex;
+}
+.leftcont{
+  background-color: #ececec;
+  width: 100%;
+  height: 100%;
+  flex: 2.5;
+}
+.rightcont{
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.sliderimg{
+  width: 95%;
+
+  background-color: gray;
+  height: 600px;
+margin: 20px;
+position: relative;
+}
+.msliderimg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.leftslide{
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 50px;
+  height: 70px;
+  background-color: rgba(128, 255, 0, 0.249);
+}
+.rightslide{
+  position: absolute;
+  right: 0;
+  
+  top: 45%;
+  width: 50px;
+  height: 70px;
+  background-color:rgba(128, 255, 0, 0.249);
+}
+.bottomnews{
+  background-color: #141b2d57;
+  height: 100px;
+  width: 80%;
+  position: absolute;
+  bottom: 20px;
   color: white;
+  padding: 20px;
+  
+}
+.leftleftcont{
+  background-color: beige;
+  height: 100%;
+  flex: 1;
+}
+.leftrightcont{
+  background-color: antiquewhite;
+  height: 100%;
+  flex: 1;
+}
+.newscontent{
+  display: flex;
+  height: 100%;
+}
+.heading{
+  font-size: 40px;
+  font-weight: 700;
+
+}
+.news{
+  font-size: 20px;
+
+}
+.mnewsbox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsimg{
+  width: 95%;
+  background-color: #141b2d;
+  height: 300px;
+}
+.mnews{
+  width: 95%;
+}
+.mheading{
+  width: 95%;
+}
+.mheadlinebox{
+  width: 100%;
+  height: 100px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headlinebox{
+  width: 97%;
+  height: 90%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+.headline{
+  font-size: 20px;
+}
+.mmnav{
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.App-link {
-  color: #61dafb;
+.mspeed{
+  width: 100%;
+  height: 100%;
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+
+}
+.speed{
+  width: 99%;
+ 
+  height: 100%;
+
+}
+.speedbox{
+  width: 98%;
+  height: 200px;
+  background-color: #ecec;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+ align-items: center;
+}
+.speedimage{
+  width: 150px;
+  height: 150px;
+  background-color: #141b2d;
+  margin: 5%;
+
+}
+.speedtext{
+  width: 60%;
+  height: 150px;
+  background-color: #fff;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.speedheading{
+  font-size: 25px;
+  font-weight: 900;
+}
+.speednews{
+  margin-top: 10px;
 }
