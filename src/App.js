@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Body from './Components/Body';
-import Mbody from './Components/Mbody';
+
 import Speednews from './Components/Speednews';
+import { useState } from 'react';
 
 function App() {
+  const [content,changeContent] = useState(<Body/>)
+
+ 
   return (
+ 
+  
     <div className="App">
       <div className="mbody">
         <div className="body">
@@ -20,8 +26,8 @@ function App() {
 
             <div className="mlogo">
 
-                <div className="logo">
-                    <div className="newspro"><i>NEWS PRO</i></div>
+                <div onClick={()=>changeContent(<Body/>)} className="logo">
+                    <div  className="newspro"><i>NEWS PRO</i></div>
                     <div className="newstext">All in one news site</div>
                 </div>
 
@@ -36,7 +42,7 @@ function App() {
 
             <div className="mmnav">
                  <div className="mnav" id="mnav">
-                 <div className="navbtn">SPEED NEWS</div> 
+                 <div onClick={() => changeContent(<Speednews/>)} className="navbtn">SPEED NEWS</div> 
                 <div className="navbtn">ENTERTAINMENT</div>
                 <div className="navbtn">MUSIC</div>
                 <div className="navbtn">POLITICS</div>
@@ -46,11 +52,18 @@ function App() {
 
          </div></div>
         
+    
 
-        <Mbody/>
+        <div className="mainbody">
+        {content}
+        </div>
+        
+
        
      </div></div>
     </div>
+
+
   );
 }
 
