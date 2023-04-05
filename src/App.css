@@ -128,6 +128,7 @@
 margin: 20px;
 position: relative;
 }
+
 .msliderimg{
   width: 100%;
   display: flex;
@@ -154,14 +155,17 @@ position: relative;
 }
 .bottomnews{
   background-color: #141b2d57;
-  height: 100px;
+  height: auto;
   width: 80%;
   position: absolute;
-  bottom: 20px;
+  bottom: 5%;
   color: white;
   padding: 20px;
+ 
   
 }
+
+
 .leftleftcont{
   background-color: beige;
   height: 100%;
@@ -177,7 +181,7 @@ position: relative;
   height: 100%;
 }
 .heading{
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 
 }
@@ -185,11 +189,17 @@ position: relative;
   font-size: 20px;
 
 }
+img{
+  width: 100%;
+  height: 100%;
+}
 .mnewsbox{
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid grey;
 }
 .newsimg{
   width: 95%;
@@ -204,20 +214,21 @@ position: relative;
 }
 .mheadlinebox{
   width: 100%;
-  height: 100px;
+  height:auto;
  
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 .headlinebox{
   width: 97%;
-  height: 90%;
+  
   background-color: #e0e0e0;
   border-radius: 10px;
 }
 .headline{
-  font-size: 20px;
+  font-size: 25px;
 }
 .mmnav{
   border-bottom: 1px solid #e0e0e0;

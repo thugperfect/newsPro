@@ -1,9 +1,9 @@
-function Headlinebox(){
+function Headlinebox(props){
     return(
 
         <div className="mheadlinebox">
             <div className="headlinebox">
-            <div className="headline">There should be a templete heading here...</div>
+            <div className="headline">{props.head}</div>
             </div> 
         </div>
     )

@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Body from './Components/Body';
-
+import axios from 'axios';
 import Speednews from './Components/Speednews';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+
 
 function App() {
-  const [content,changeContent] = useState(<Body/>)
+
+
+
+
+  const [content,changeContent] = useState(<Body />)
 
  
   return (
@@ -43,11 +48,11 @@ function App() {
             <div className="mmnav">
                  <div className="mnav" id="mnav">
                  <div onClick={() => changeContent(<Speednews/>)} className="navbtn">SPEED NEWS</div> 
-                <div className="navbtn">ENTERTAINMENT</div>
-                <div className="navbtn">MUSIC</div>
-                <div className="navbtn">POLITICS</div>
-                <div className="navbtn">TECH</div>
-                <div className="navbtn">SPORTS</div>
+                <div onClick={() => changeContent(<Body/>)} className="navbtn">ENTERTAINMENT</div>
+                <div onClick={() => changeContent(<Body/>)} className="navbtn">MUSIC</div>
+                <div onClick={() => changeContent(<Body/>)} className="navbtn">POLITICS</div>
+                <div onClick={() => changeContent(<Body/>)} className="navbtn">TECH</div>
+                <div onClick={() => changeContent(<Body/>)} className="navbtn">SPORTS</div>
 
 
          </div></div>
@@ -56,9 +61,10 @@ function App() {
 
         <div className="mainbody">
         {content}
+        
         </div>
         
-
+    
        
      </div></div>
     </div>
