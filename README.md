@@ -1,3 +1,8 @@
+## NewsPro
+
+Simple news blog website connected with API(done using react...).
+But Free News API is not for deployment...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
